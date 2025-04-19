@@ -6,139 +6,129 @@
     <title>Dog Accessories</title>
     <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #ffcc00;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin: 10px;
-            width: 300px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            overflow: hidden;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-        .card h2 {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        .card p {
-            color: #555;
-            padding: 0 10px 10px;
-        }
+       body {
+    font-family: 'Alegreya SC', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+    color: #333;
+}
 
-        body {
-            font-family: 'Alegreya SC';
-            margin: 0;
-            padding: 0;
-            background-color: #ebebeb;
-            color: #333;
-        }
+.brand-ribbon {
+    background-color: #e1c61c;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        .brand-ribbon {
-            background-color:#e1c61c;
-            color: white;
-            text-align: center;
-            padding: 0.5rem;
-            font-size: 3.2rem;
-            font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+nav {
+    background-color: #e1c61c;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        nav {
-            background-color: #e1c61c;
-            padding: 1rem;
-            color: white;
-            display: flex;
-            justify-content: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            margin: 0 15px;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
+nav a:hover {
+    background-color: #333;
+    color: #ffcc66;
+}
 
-        nav a:hover {
-            background-color: #333;
-            color: #ffcc66;
-        }
+header {
+    text-align: center;
+    padding: 2rem;
+    background: url('dog-banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
-        header {
-            text-align: center;
-            padding: 2rem;
-            background: url('dog-banner.jpg') no-repeat center center/cover;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #333;
+}
 
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
+header p {
+    font-size: 1.5rem;
+    margin: 1rem 0 0;
+}
 
-        header p {
-            font-size: 1.5rem;
-            margin: 1rem 0 0;
-        }
+main {
+    padding: 2rem;
+    text-align: center;
+}
 
-        main {
-            padding: 2rem;
-            text-align: center;
-        }
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 
-        main h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
+main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
 
-        main p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+    padding: 0 10px 10px;
+}
     </style>
 </head>
 <body>
     <div class="brand-ribbon">Pawsies🐾</div>
     
     <nav>
-        <a href="homepage.html">Home</a>
+        <a href="../homepage.html">Home</a>
         <a href="accessories.html">Accessories</a>
         <a href="clothes.html">Clothes</a>
         <a href="food.html">Food</a>
