@@ -8,7 +8,7 @@ const requestHandler = (req, res) => {
     console.log('method:', method);
 
     if(url === '/'){
-        fs.readFile('../pages/homepage.html', (err, data) => {
+        fs.readFile('../pages/index.html', (err, data) => {
             if (err) {
               res.writeHead(500, {'Content-Type': 'text/plain'});
               res.end('Internal Server Error');
